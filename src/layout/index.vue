@@ -1,6 +1,6 @@
 <template>
     <div class='layout'>
-        <top class='top' :title="key.meta.title" v-if="key.path !='/index'"></top>
+        <top class='top' :mdata="key.meta" v-if="key.path !='/index'"></top>
         <div class='content'>
             <keep-alive>
                 <router-view :key="key.path" />

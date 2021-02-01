@@ -1,7 +1,7 @@
 <template>
     <div class='info'>
         <form class='info-form'>
-            <list-c v-for="(item,index) in list.normal" :key="index" :name="item.name" :currentValue="item.currentValue" :title="item.title" :placeholder="item.placeholder" :type="item.type" :list="item.list"></list-c>
+            <list-c v-for="(item,index) in list.normal" :key="index" :ldata="item"></list-c>
         </form>
     </div>
 </template>

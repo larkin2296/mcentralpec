@@ -1,25 +1,25 @@
 <template>
     <div class='list-c'>
         <div class='list-c-left'>
-            {{title}}
+            {{ldata.title}}
         </div>
-        <div class='list-c-right' v-if="type == 'input'">
-            <input :name="name" :value="currentValue" :placeholder="placeholder" @input="setData" />
-            <img class="right" src="img/right-list.png" />
+        <div class='list-c-right' v-if="ldata.type == 'input'">
+            <input :name="ldata.name" :value="ldata.currentValue" :placeholder="ldata.placeholder" @input="ldata.setData" />
+            <img class="right" src="img/right-list.png" v-if="ldata.right == true"/>
         </div>
-        <div class='list-c-right' v-if="type == 'img'">
+        <div class='list-c-right' v-if="ldata.type == 'img'">
             <div class='avatar'>
-                <img :src="pic" />
+                <img :src="ldata.pic" />
             </div>
         </div>
-        <div class='list-c-right' v-if="type == 'select'">
+        <div class='list-c-right' v-if="ldata.type == 'select'">
             <div class='select'>
-                <div class='select-list' v-for="(item,index) in list" :key="index">{{item}}</div>
+                <div class='select-list' v-for="(item,index) in ldata.list" :key="index">{{item}}</div>
             </div>
         </div>
-        <div class='list-c-right' v-if="type == 'switch'">
+        <div class='list-c-right' v-if="ldata.type == 'switch'">
             <div class='switch'>
-                <switch-c v-model="currentValue" text=""></switch-c>
+                <switch-c v-model="ldata.currentValue" text=""></switch-c>
             </div>
         </div>
         <div style="clear:both;"></div>
@@ -31,26 +31,8 @@ import SwitchC from '@/components/StyleC/SwitchC.vue'
 export default {
     components: { SwitchC },
     props: {
-        title: {
-            type: String
-        },
-        name: {
-            type: String
-        },
-        currentValue: {
-            type: String
-        },
-        placeholder: {
-            type: String
-        },
-        type: {
-            type: String
-        },
-        list: {
-            type: Array
-        },
-        pic: {
-            type: String
+        ldata: {
+            type: Object
         }
     },
     data() {
@@ -69,19 +51,21 @@ export default {
 
 <style scoped>
 .list-c{
-    width:100%;
+    width:95%;
+    padding: 0 2.5%;
     height: 140px;
     line-height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #F1F1F1;
+    background-color: #fff;
 }
 .list-c-left{
     width: 40%;
     height: 100%;
     line-height: 140px;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 .list-c-right{
     width:60%;
@@ -97,7 +81,7 @@ export default {
     margin-right:3%;
     padding: 0;
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     text-align: right;
 }
 .list-c-right .right{

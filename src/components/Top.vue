@@ -1,8 +1,11 @@
 <template>
     <div>
         <div class='title-bar'>
-            <div class='title-bar-back' @click="go_back">＜</div>
-            <div class='title-bar-title'>{{title}}</div>
+            <img class='title-bar-back' @click="go_back" src="img/right-list.png" />
+            <div class='title-bar-title'>{{mdata.title}}</div>
+            <router-link v-if="mdata.right"  :to="{path: mdata.path}" class='title-bar-right'>
+                {{mdata.right}}
+            </router-link>
         </div>
     </div>
 </template>
@@ -10,9 +13,8 @@
 <script>
 export default {
     props: {
-        title: {
-            type: String,
-            default: ''
+        mdata: {
+            type: Object
         }
     },
     beforeRouteEnter (to, from, next) {
@@ -30,8 +32,12 @@ export default {
 
 <style scoped>
 .title-bar{
-    width:100%;
+    width:95%;
     height:100%;
+    padding: 0 2.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .title-bar-title{
     width:auto;
@@ -45,15 +51,17 @@ export default {
     line-height:90px;
 }
 .title-bar-back{
+    width:40px;
+    height:40px;
+    transform: rotateY(180deg);
+}
+.title-bar-right{
     width:auto;
     height:90px;
     font-size:34px;
     font-family:PingFang SC;
     font-weight:bold;
-    color:rgba(51,51,51,1);
+    color:#FF7F24;
     line-height:90px;
-    position: absolute;
-    top:0px;
-    left: 20px;
 }
 </style>

@@ -15,6 +15,42 @@ export default {
                 center: true
             },
             tab_data: ['在售中', '已下架', '回收站'],
+            button_data: [{
+                width: '80px',
+                height: '32px',
+                color: '#fff',
+                background: 'linear-gradient(-90deg, #F7B443 0%, #FA802E 100%)',
+                text: '新建提单',
+                font: '14px',
+                radius: '5px'
+            }, {
+                width: '80px',
+                height: '32px',
+                color: '#000',
+                background: '#fff',
+                text: '编辑',
+                font: '14px',
+                radius: '5px',
+                border: '1px solid #CCCCCC'
+            }, {
+                width: '80px',
+                height: '32px',
+                color: '#000',
+                background: '#fff',
+                text: '下架',
+                font: '14px',
+                radius: '5px',
+                border: '1px solid #CCCCCC'
+            }, {
+                width: '80px',
+                height: '32px',
+                color: '#000',
+                background: '#fff',
+                text: '移除',
+                font: '14px',
+                radius: '5px',
+                border: '1px solid #CCCCCC'
+            }]
         }
     },
     created() {

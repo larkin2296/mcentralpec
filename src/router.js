@@ -181,7 +181,7 @@ export const constantRoutes = [{
             component: () =>
                 import ('@/views/goods/index.vue'),
             name: 'Index',
-            meta: { title: '商品列表' }
+            meta: { title: '商品列表', right: '发布', path: '/goods/add' }
         }, {
             path: 'add',
             component: () =>
