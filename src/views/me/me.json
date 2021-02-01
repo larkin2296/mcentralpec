@@ -1,0 +1,78 @@
+{
+    "meau": [{
+        "pic": "img/gerenxinxi.png",
+        "url": "/info",
+        "word": "个人信息"
+    }, {
+        "pic": "img/renzhengzhongxin.png",
+        "url": "/cert",
+        "word": "认证中心"
+    }, {
+        "pic": "img/wodeshoucang.png",
+        "url": "/info/index",
+        "word": "我的收藏"
+    }, {
+        "pic": "img/shouhuodizhi.png",
+        "url": "/address",
+        "word": "收货地址"
+    }],
+    "listdata": [{
+        "title": "采购管理",
+        "list": [{
+            "pic": "img/wodedingdan.png",
+            "word": "我的订单"
+        }, {
+            "pic": "img/wodetidan.png",
+            "word": "我的提单"
+        }, {
+            "pic": "img/wodejingjia.png",
+            "word": "我的竞价"
+        }, {
+            "pic": "img/wodejingcai.png",
+            "word": "我的竞采"
+        }]
+    }, {
+        "title": "供应商管理",
+        "list": [{
+            "pic": "img/shangpingliebiao.png",
+            "url": "/goods",
+            "word": "商品列表"
+        }, {
+            "pic": "img/dingdan.png",
+            "word": "订单列表"
+        }, {
+            "pic": "img/tidanliebiao.png",
+            "word": "提单列表"
+        }, {
+            "pic": "img/jingjialiebiao.png",
+            "word": "竞价列表"
+        }, {
+            "pic": "img/jingcailiebiao.png",
+            "word": "竞采列表"
+        }, {
+            "pic": "img/zizhanghao.png",
+            "word": "子账号管理"
+        }, {
+            "pic": "img/kehuliebiao.png",
+            "word": "客户列表"
+        }]
+    }, {
+        "title": "仓储管理",
+        "list": [{
+            "pic": "img/tidanliebiao.png",
+            "word": "提单列表"
+        }, {
+            "pic": "img/yuanquguanli.png",
+            "word": "园区管理"
+        }, {
+            "pic": "img/zizhanghao.png",
+            "word": "子账号管理"
+        }]
+    }, {
+        "title": "物流管理",
+        "list": [{
+            "pic": "img/tidanliebiao.png",
+            "word": "提单列表"
+        }]
+    }]
+}

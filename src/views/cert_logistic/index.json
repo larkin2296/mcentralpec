@@ -1,0 +1,15 @@
+{
+    "name": "Logistics",
+    "data": [
+        [
+            { "code": "company_name", "type": "input", "placeholder": "公司名称", "require": true, "value": "" },
+            { "code": "contacts", "type": "input", "placeholder": "法人/业务联系人", "require": true, "value": "" },
+            { "code": "tel", "type": "input", "placeholder": "办公电话", "require": false, "value": "" },
+            { "code": "area", "type": "area", "placeholder": "所在地区", "require": false, "value": "" },
+            { "code": "address", "type": "input", "placeholder": "办公详细地址", "require": false, "value": "" },
+            { "code": "yingyezhizhao", "type": "pic", "name": "营业执照", "require": true, "other": true, "num": 1, "words": [""], "value": [] },
+            { "code": "kaihuxukezheng", "type": "pic", "name": "开户许可证", "require": true, "other": false, "num": 1, "words": [""], "value": [] },
+            { "code": "daoluyunshu", "type": "pic", "name": "道路运输经营许可证", "require": false, "other": true, "num": 1, "words": [""], "value": [] }
+        ]
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "normal": [
+        { "name": "avatar", "title": "头像", "currentValue": "", "placeholder": "", "type": "img" },
+        { "name": "name", "title": "登录名", "currentValue": "", "placeholder": "", "type": "input" },
+        { "name": "phone", "title": "手机号", "currentValue": "", "placeholder": "", "type": "input" },
+        { "name": "identify", "title": "身份", "currentValue": "", "placeholder": "", "type": "select", "list": ["供应商", "仓储"] },
+        { "name": "role", "title": "角色", "currentValue": "", "placeholder": "", "type": "input" }
+    ],
+    "invoice": [
+        { "name": "invoice", "title": "发票信息", "currentValue": "上海雷澜有限公司", "placeholder": "", "type": "input" }
+    ]
+}

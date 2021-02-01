@@ -1,0 +1,138 @@
+.me-meau {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me-meau-list {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.me-meau-list-top {
+    width: 50px;
+    height: 55px;
+}
+
+.me-meau-list-top img {
+    width: 100%;
+    height: 100%;
+}
+
+.me-meau-list-center {
+    font-size: 2vw;
+    line-height: 100px;
+    text-decoration: none;
+    color: #000;
+}
+
+.me-set {
+    width: 100%;
+    height: 60px;
+}
+
+.me-set-list {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-right: 40px;
+}
+
+.me-set-list img {
+    width: 100%;
+    height: 100%;
+}
+
+.me-info {
+    width: 90%;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.me-info-avatar {
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+
+.me-info-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.me-info-right {
+    width: calc( 100% - 120px);
+    float: left;
+    height: 120px;
+}
+
+.me-info-title {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 5vw;
+}
+
+.me-info-type {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: linear-gradient(90deg, #FF4D00 0%, #F1A43C 100%);
+    font-size: 1vw;
+    color: #fff;
+    text-align: center;
+}
+
+.me-money {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.me-money-list {
+    width: 45%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.me-money-list-left {
+    width: 80px;
+    font-size: 1vw;
+    color: #666;
+}
+
+.me-money-list-right {
+    font-size: 5vw;
+    color: #000;
+}
+
+.me-tip {
+    width: 95%;
+    height: 60px;
+    margin: 20px auto;
+    line-height: 60px;
+    font-size: 1vw;
+    color: #FF761C;
+    background-color: #FCEFE2;
+    display: flex;
+    align-items: center;
+}
+
+.me-tip img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}

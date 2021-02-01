@@ -1,0 +1,130 @@
+[
+    {
+        "name":"Supplier",
+        "data":[
+            [
+                {"code": "name","type":"input","placeholder":"请输入用户名","require": true, "value": ""},
+                {"code": "pwd","type":"input","placeholder":"请输入密码", "require": true, "value": ""},
+                {"code": "apwd","type":"input","placeholder":"重新输入密码", "require": true, "value": ""},
+                {"code": "company_name","type":"input","placeholder":"公司名称", "require": true, "value": ""},
+                {"code": "contacts","type":"input","placeholder":"法人/业务联系人", "require": true, "value": ""},
+                {"code": "tel","type":"input","placeholder":"办公电话", "require": false, "value": ""},
+                {"code": "area","type":"area","placeholder":"所在地区", "require": false, "value": ""},
+                {"code": "address","type":"input","placeholder":"办公详细地址", "require": false, "value": ""}
+            ],
+            [
+                {"code": "invoice_company_name","type":"input","placeholder":"公司名称(开票)", "require": true, "value": ""},
+                {"code": "invoice_tax","type":"input","placeholder":"税号(开票)", "require": true, "value": ""},
+                {"code": "invoice_bank","type":"input","placeholder":"开户行(开票)", "require": true, "value": ""},
+                {"code": "invoice_accounts","type":"input","placeholder":"账号(开票)", "require": true, "value": ""},
+                {"code": "invoice_company_address","type":"input","placeholder":"地址(开票)", "require": true, "value": ""},
+                {"code": "invoice_tel","type":"input","placeholder":"电话(开票)", "require": true, "value": ""}
+            ],[
+                {"code": "yingyezhizhao","type":"pic","name":"营业执照","require":true,"other":true,"num":1,"words":[""], "value":[]},
+                {"code": "kaihuxukezheng","type":"pic","name":"开户许可证","require":true,"other":false,"num":1,"words":[""], "value":[]},
+                {"code": "huihuaping","type":"pic","name":"危险化学品经营许可证","require":false,"other":true,"num":1,"words":[""], "value":[]},
+                {"code": "chengpingyou","type":"pic","name":"成品油批发经营许可证","require":true,"other":true,"num":1,"words":[""], "value":[]}
+            ]
+        ]
+    },
+    {
+        "name":"Nomal",
+        "data":[
+            [
+                {"code": "name","type":"input","placeholder":"请输入用户名","require": true, "value": ""},
+                {"code": "pwd","type":"input","placeholder":"请输入密码", "require": true, "value": ""},
+                {"code": "apwd","type":"input","placeholder":"重新输入密码", "require": true, "value": ""},
+                {"code": "company_name","type":"input","placeholder":"公司名称", "require": true, "value": ""},
+                {"code": "contacts","type":"input","placeholder":"法人/业务联系人", "require": true, "value": ""},
+                {"code": "tel","type":"input","placeholder":"办公电话", "require": false, "value": ""},
+                {"code": "area","type":"area","placeholder":"所在地区", "require": false, "value": ""},
+                {"code": "address","type":"input","placeholder":"办公详细地址", "require": false, "value": ""}
+            ],
+            [
+                {"code": "invoice_company_name","type":"input","placeholder":"公司名称(开票)", "require": true, "value": ""},
+                {"code": "invoice_tax","type":"input","placeholder":"税号(开票)", "require": true, "value": ""},
+                {"code": "invoice_bank","type":"input","placeholder":"开户行(开票)", "require": true, "value": ""},
+                {"code": "invoice_accounts","type":"input","placeholder":"账号(开票)", "require": true, "value": ""},
+                {"code": "invoice_company_address","type":"input","placeholder":"地址(开票)", "require": true, "value": ""},
+                {"code": "invoice_tel","type":"input","placeholder":"电话(开票)", "require": true, "value": ""}
+            ]
+        ]
+    },
+    {
+        "name":"Logistics",
+        "data":[
+            [
+                {"code": "name","type":"input","placeholder":"请输入用户名","require": true, "value": ""},
+                {"code": "pwd","type":"input","placeholder":"请输入密码", "require": true, "value": ""},
+                {"code": "apwd","type":"input","placeholder":"重新输入密码", "require": true, "value": ""},
+                {"code": "company_name","type":"input","placeholder":"公司名称", "require": true, "value": ""},
+                {"code": "contacts","type":"input","placeholder":"法人/业务联系人", "require": true, "value": ""},
+                {"code": "tel","type":"input","placeholder":"办公电话", "require": false, "value": ""},
+                {"code": "area","type":"area","placeholder":"所在地区", "require": false, "value": ""},
+                {"code": "address","type":"input","placeholder":"办公详细地址", "require": false, "value": ""}
+            ],
+            [
+                {"code": "invoice_company_name","type":"input","placeholder":"公司名称(开票)", "require": true, "value": ""},
+                {"code": "invoice_tax","type":"input","placeholder":"税号(开票)", "require": true, "value": ""},
+                {"code": "invoice_bank","type":"input","placeholder":"开户行(开票)", "require": true, "value": ""},
+                {"code": "invoice_accounts","type":"input","placeholder":"账号(开票)", "require": true, "value": ""},
+                {"code": "invoice_company_address","type":"input","placeholder":"地址(开票)", "require": true, "value": ""},
+                {"code": "invoice_tel","type":"input","placeholder":"电话(开票)", "require": true, "value": ""}
+            ],
+            [
+                {"code": "yingyezhizhao","type":"pic","name":"营业执照","require":true,"other":true,"num":1,"words":[""], "value":[]},
+                {"code": "kaihuxukezheng","type":"pic","name":"开户许可证","require":true,"other":false,"num":1,"words":[""], "value":[]},
+                {"code": "daoluyunshu","type":"pic","name":"道路运输经营许可证","require":false,"other":true,"num":1,"words":[""], "value":[]}
+            ]
+        ]
+    },
+    {
+        "name":"Storage",
+        "data":[
+            [
+                {"code": "name","type":"input","placeholder":"请输入用户名","require": true, "value": ""},
+                {"code": "pwd","type":"input","placeholder":"请输入密码", "require": true, "value": ""},
+                {"code": "apwd","type":"input","placeholder":"重新输入密码", "require": true, "value": ""},
+                {"code": "company_name","type":"input","placeholder":"公司名称", "require": true, "value": ""},
+                {"code": "contacts","type":"input","placeholder":"法人/业务联系人", "require": true, "value": ""},
+                {"code": "tel","type":"input","placeholder":"办公电话", "require": false, "value": ""},
+                {"code": "area","type":"area","placeholder":"所在地区", "require": false, "value": ""},
+                {"code": "address","type":"input","placeholder":"办公详细地址", "require": false, "value": ""}
+            ],
+            [
+                {"code": "invoice_company_name","type":"input","placeholder":"公司名称(开票)", "require": true, "value": ""},
+                {"code": "invoice_tax","type":"input","placeholder":"税号(开票)", "require": true, "value": ""},
+                {"code": "invoice_bank","type":"input","placeholder":"开户行(开票)", "require": true, "value": ""},
+                {"code": "invoice_accounts","type":"input","placeholder":"账号(开票)", "require": true, "value": ""},
+                {"code": "invoice_company_address","type":"input","placeholder":"地址(开票)", "require": true, "value": ""},
+                {"code": "invoice_tel","type":"input","placeholder":"电话(开票)", "require": true, "value": ""}
+            ],
+            [
+                {"code": "yingyezhizhao","type":"pic","name":"营业执照","require":true,"other":true,"num":1,"words":[""], "value":[]},
+                {"code": "kaihuxukezheng","type":"pic","name":"开户许可证","require":true,"other":false,"num":1,"words":[""], "value":[]}
+            ]
+        ]
+    },
+    {
+        "name":"Driver",
+        "data":[
+                [
+                    {"code": "","type":"input","placeholder":"输入账号","require": true, "value": ""},
+                    {"code": "pwd","type":"input","placeholder":"请输入登录密码","require": true, "value": ""},
+                    {"code": "apwd","type":"input","placeholder":"重新输入登录密码", "require": true, "value": ""},
+                    {"code": "driver_name","type":"input","placeholder":"姓名", "require": true, "value": ""},
+                    {"code": "id_card","type":"input","placeholder":"身份证号", "require": true, "value": ""},
+                    {"code": "truck_num","type":"input","placeholder":"车号", "require": true, "value": ""},
+                    {"code": "trailer","type":"input","placeholder":"挂车号", "require": false, "value": ""},
+                    {"code": "truck_type","type":"input","placeholder":"微型货车", "require": false, "value": ""},
+                    {"code": "","type":"input","placeholder":"车长", "require": false, "value": ""}
+                ],
+                [
+                    {"code": "shenfenzheng","type":"pic","name":"身份证照片","require":true,"other":true,"num":2,"words":["身份证正面","身份证背面"], "value":[]},
+                    {"code": "jiashizheng","type":"pic","name":"驾驶证照片","require":true,"other":true,"num":2,"words":["驾驶证正面","驾驶证背面"], "value":[]},
+                    {"code": "xingshizheng","type":"pic","name":"车辆行驶证","require":true,"other":true,"num":2,"words":["行驶证正面","行驶证背面"], "value":[]},
+                    {"code": "zigezheng","type":"pic","name":"从业资格证","require":true,"other":true,"num":1,"words":[""], "value":[]}
+                ]
+        ]
+    }
+]

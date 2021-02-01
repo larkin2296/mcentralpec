@@ -1,0 +1,10 @@
+{
+    "normal": [
+        { "name": "avatar", "title": "收货人", "currentValue": "", "placeholder": "", "type": "input" },
+        { "name": "name", "title": "手机号码", "currentValue": "", "placeholder": "", "type": "input" },
+        { "name": "phone", "title": "办公电话", "currentValue": "", "placeholder": "", "type": "input" },
+        { "name": "identify", "title": "所在地区", "currentValue": "", "placeholder": "", "type": "input" },
+        { "name": "role", "title": "详细地址", "currentValue": "", "placeholder": "", "type": "input" },
+        { "name": "default", "title": "设为默认", "currentValue": "", "placeholder": "", "type": "switch" }
+    ]
+}

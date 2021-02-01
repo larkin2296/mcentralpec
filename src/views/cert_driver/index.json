@@ -1,0 +1,17 @@
+{
+    "name": "Driver",
+    "data": [
+        [
+            { "code": "driver_name", "type": "input", "placeholder": "姓名", "require": true, "value": "" },
+            { "code": "id_card", "type": "input", "placeholder": "身份证号", "require": true, "value": "" },
+            { "code": "truck_num", "type": "input", "placeholder": "车号", "require": true, "value": "" },
+            { "code": "trailer", "type": "input", "placeholder": "挂车号", "require": false, "value": "" },
+            { "code": "truck_type", "type": "input", "placeholder": "微型货车", "require": false, "value": "" },
+            { "code": "", "type": "input", "placeholder": "车长", "require": false, "value": "" },
+            { "code": "shenfenzheng", "type": "pic", "name": "身份证照片", "require": true, "other": true, "num": 2, "words": ["身份证正面", "身份证背面"], "value": [] },
+            { "code": "jiashizheng", "type": "pic", "name": "驾驶证照片", "require": true, "other": true, "num": 2, "words": ["驾驶证正面", "驾驶证背面"], "value": [] },
+            { "code": "xingshizheng", "type": "pic", "name": "车辆行驶证", "require": true, "other": true, "num": 2, "words": ["行驶证正面", "行驶证背面"], "value": [] },
+            { "code": "zigezheng", "type": "pic", "name": "从业资格证", "require": true, "other": true, "num": 1, "words": [""], "value": [] }
+        ]
+    ]
+}
