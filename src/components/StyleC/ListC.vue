@@ -1,6 +1,9 @@
 <template>
     <div class='list-c'>
-        <div class='list-c-left'>
+        <div class='list-c-left' v-if="ldata.type != 'textarea'">
+            {{ldata.title}}
+        </div>
+        <div class='list-c-left textarea-left' v-if="ldata.type == 'textarea'">
             {{ldata.title}}
         </div>
         <div class='list-c-right' v-if="ldata.type == 'input'">
@@ -23,13 +26,34 @@
             </div>
         </div>
         <div style="clear:both;"></div>
+        <div class='list-c-right' v-if="ldata.type == 'radio'">
+            <div class='radio'>
+                <radio-c class='confirm-agree-radio' v-for="(item,index) in ldata.radio" :key="index" :value="item.value" :title="item.title" :name="ldata.name" text=""></radio-c>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+        <div class='list-c-right' v-if="ldata.type == 'checkbox'">
+            <div class='radio'>
+                <checkbox-c class='confirm-agree-radio' v-for="(item,index) in ldata.checkbox" :key="index" :value="item.value" :title="item.title" :name="ldata.name" text=""></checkbox-c>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+        <div class='list-c-right textarea-right' v-if="ldata.type == 'textarea'">
+            <div class='switch'>
+                <textarea-c :tdata="ldata"></textarea-c>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
     </div>
 </template>
 
 <script>
 import SwitchC from '@/components/StyleC/SwitchC.vue'
+import RadioC from '@/components/StyleC/RadioC.vue'
+import CheckboxC from '@/components/StyleC/CheckboxC.vue'
+import TextareaC from '@/components/StyleC/TextareaC.vue'
 export default {
-    components: { SwitchC },
+    components: { SwitchC, RadioC, CheckboxC, TextareaC },
     props: {
         ldata: {
             type: Object
@@ -53,11 +77,13 @@ export default {
 .list-c{
     width:95%;
     padding: 0 2.5%;
-    height: 140px;
+    min-height: 140px;
+    height: auto;
     line-height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     border-bottom: 1px solid #F1F1F1;
     background-color: #fff;
 }
@@ -67,6 +93,9 @@ export default {
     line-height: 140px;
     font-size: 4vw;
 }
+.textarea-left{
+    width: 100%;
+}
 .list-c-right{
     width:60%;
     height: 100%;
@@ -75,9 +104,12 @@ export default {
     align-items: center;
     justify-content: space-around;
 }
+.textarea-right{
+    width: 100%;
+}
 .list-c-right input{
-    width: 94%;
-    height:50%;
+    width: 86%;
+    height:70px;
     margin-right:3%;
     padding: 0;
     border: none;
@@ -118,5 +150,21 @@ export default {
 .switch{
     width: 100%;
     height: 100%;
+}
+.confirm-agree-radio{
+    width: auto;
+    height: 80px;
+    margin-right:20px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.radio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 </style>

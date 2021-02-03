@@ -21,7 +21,7 @@
             </div>
             <div class='confirm-button dis-top' @click="go_next()">下一步</div>
             <div class='confirm-agree'>
-                <div class='confirm-agree-content'><radio-c class='confirm-agree-radio' :value="check_agree" :name="agree"></radio-c>已阅读并同意 《中华石化网平台服务协议》</div>
+                <div class='confirm-agree-content'><radio-c class='confirm-agree-radio' :value="check_agree" :name="agree" :title="agree"></radio-c>已阅读并同意 《中华石化网平台服务协议》</div>
             </div>
         </div>
         <form-c class='form' v-if="show == 0" :formdata="roles_data" @next="setNext"></form-c>
