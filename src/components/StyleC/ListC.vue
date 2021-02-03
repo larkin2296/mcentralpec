@@ -15,6 +15,12 @@
                 <img :src="ldata.pic" />
             </div>
         </div>
+        <div class='list-c-right end' v-if="ldata.type == 'local'">
+            <img class='local' src="img/local.png" />
+        </div>
+        <div class='list-c-right end' v-if="ldata.type == 'photo'">
+            <img class='photo' src="img/camara.png" />
+        </div>
         <div class='list-c-right' v-if="ldata.type == 'select'">
             <div class='select'>
                 <div class='select-list' v-for="(item,index) in ldata.list" :key="index">{{item}}</div>
@@ -98,7 +104,7 @@ export default {
 }
 .list-c-right{
     width:60%;
-    height: 100%;
+    height: 140px;
     line-height: 140px;
     display: flex;
     align-items: center;
@@ -163,6 +169,19 @@ export default {
 .radio{
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.local{
+    width: 35px;
+    height: 40px;
+}
+.photo{
+    width: 50px;
+    height: 45px;
+}
+.end{
     display: flex;
     align-items: center;
     justify-content: flex-end;

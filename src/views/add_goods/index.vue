@@ -3,6 +3,9 @@
         <form class='goods-form'>
             <list-c v-for="(item,index) in list" :key="index" :ldata="item"></list-c>
         </form>
+        <div class='goods-list-content-bottom'>
+            <button-c v-for="(item,index) in button_data" :key="index" :bdata="item"></button-c>
+        </div>
     </div>
 </template>
 
