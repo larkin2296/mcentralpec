@@ -16,6 +16,7 @@
             </div>
         </div>
         <div class='list-c-right end' v-if="ldata.type == 'local'">
+            <input :name="ldata.name" :value="ldata.currentValue" :placeholder="ldata.placeholder" @input="setData" :disabled="ldata.disabled" />
             <img class='local' src="img/local.png" />
         </div>
         <div class='list-c-right end' v-if="ldata.type == 'photo'">

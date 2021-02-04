@@ -3,10 +3,13 @@ import ButtonC from '@/components/StyleC/ButtonC.vue'
 import GoodsType from '@/components/GoodsType.vue'
 import SearchList from '@/components/SearchList.vue'
 import GoodsPic from '@/components/GoodsPic.vue'
+import Ladder from '@/components/Ladder.vue'
+import AreaC from '@/components/StyleC/AreaC.vue'
+import PropC from '@/components/StyleC/PropC.vue'
 import Goods from './index.json'
 
 export default {
-    components: { ListC, ButtonC, GoodsType, SearchList, GoodsPic },
+    components: { ListC, ButtonC, GoodsType, SearchList, GoodsPic, Ladder, AreaC, PropC },
     data() {
         return {
             list: Goods.goods,
@@ -43,6 +46,12 @@ export default {
             if (e == false) {
                 this.page = 'none'
             }
+        },
+        updateCity(data) {
+            this.form.province = data.provinces
+            this.form.city = data.city
+            this.page = ''
+            this.address = data.provinces + ',' + data.city
         }
     },
 }

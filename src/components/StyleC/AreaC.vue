@@ -1,7 +1,7 @@
 <template>
     <div class='area'>
         <!-- 背后阴影 -->
-        <div class='bg'></div>
+        <div class='bg' @click="setBg"></div>
         <!-- 选择弹框主体 -->
         <div class='body'>
             <!-- 标题 -->
@@ -71,6 +71,9 @@ export default {
                 param.area = this.area
                 this.$emit('address',param)
             }
+        },
+        setBg(){
+            this.$emit('setBg',false)
         }
     }
 }

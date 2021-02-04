@@ -10,6 +10,9 @@
         <goods-type class='secondary-pages' v-if="page == 'goods_type'" @next="setNone"></goods-type>
         <search-list class='secondary-pages' v-if="page == 'search_list'" @searchlist="setNone"></search-list>
         <goods-pic class='secondary-pages' v-if="page == 'goods_pic'" @goodspic="setNone"></goods-pic>
+        <ladder class='secondary-pages' v-if="page == 'ladder'" @ladder="setNone"></ladder>
+        <area-c v-if="page == 'area'" @address="updateCity" @setBg="setNone"></area-c>
+        <prop-c v-if="page == 'prop'" @setBg="setNone"></prop-c>
     </div>
 </template>
 
