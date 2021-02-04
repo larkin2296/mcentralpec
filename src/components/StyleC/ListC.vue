@@ -7,7 +7,7 @@
             {{ldata.title}}
         </div>
         <div class='list-c-right' v-if="ldata.type == 'input'">
-            <input :name="ldata.name" :value="ldata.currentValue" :placeholder="ldata.placeholder" @input="ldata.setData" />
+            <input :name="ldata.name" :value="ldata.currentValue" :placeholder="ldata.placeholder" @input="setData" :disabled="ldata.disabled" />
             <img class="right" src="img/right-list.png" v-if="ldata.right == true"/>
         </div>
         <div class='list-c-right' v-if="ldata.type == 'img'">
@@ -74,6 +74,9 @@ export default {
         setData(event){
             const value = event.target.value
             this.$emit('input',value)
+        },
+        test(){
+            console.log(11111)
         }
     }
 }

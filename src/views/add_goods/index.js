@@ -1,9 +1,12 @@
 import ListC from '@/components/StyleC/ListC.vue'
 import ButtonC from '@/components/StyleC/ButtonC.vue'
+import GoodsType from '@/components/GoodsType.vue'
+import SearchList from '@/components/SearchList.vue'
+import GoodsPic from '@/components/GoodsPic.vue'
 import Goods from './index.json'
 
 export default {
-    components: { ListC, ButtonC },
+    components: { ListC, ButtonC, GoodsType, SearchList, GoodsPic },
     data() {
         return {
             list: Goods.goods,
@@ -23,7 +26,23 @@ export default {
                 text: '保存',
                 font: '14px',
                 radius: '5px'
-            }]
+            }],
+            form: {},
+            page: ""
         }
-    }
+    },
+    methods: {
+        setInput(e) {
+            Object.assign(this.form, e.data)
+        },
+        set_page(page) {
+            this.page = page
+        },
+        setNone(e) {
+            console.log(e)
+            if (e == false) {
+                this.page = 'none'
+            }
+        }
+    },
 }

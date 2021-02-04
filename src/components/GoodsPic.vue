@@ -5,11 +5,9 @@
             <search :width="search.width" :height="search.height" :placeholder="search.placeholder" :center="search.center"></search>
         </div>
         <div class='goods-type-list'>
-            <div class='goods-type-list-left'>
-                <div v-for="(item,index) in list" :class="'list-data '+ (choose == index?'choose':'')" :key="index" @click="get_choose(index)">{{item.name}}</div>
-            </div>
-            <div class='goods-type-list-right'>
-                <div v-for="(item,inx) in list[choose].children" class="list-data" :key="inx">{{item}}</div>
+            <div v-for="(item,index) in list" :class="'list-data '+ (choose == index?'choose':'')" :key="index" @click="get_choose(index)">
+                <img :src="item.pic" />
+                <div class='title'>{{item.name}}</div>
             </div>
         </div>
     </div>
@@ -24,10 +22,31 @@ export default {
         return {
             list: [{
                 name: '成品油，燃料油',
-                children: ['汽油','柴油','煤油','燃料油']
+                pic: 'img/sucai/1.png'
             },{
                 name: '化工原料',
-                children: ['沥青','乙醇']
+                pic: 'img/sucai/2.png'
+            },{
+                name: '化工原料',
+                pic: 'img/sucai/2.png'
+            },{
+                name: '化工原料',
+                pic: 'img/sucai/2.png'
+            },{
+                name: '化工原料',
+                pic: 'img/sucai/2.png'
+            },{
+                name: '化工原料',
+                pic: 'img/sucai/2.png'
+            },{
+                name: '化工原料',
+                pic: 'img/sucai/2.png'
+            },{
+                name: '化工原料',
+                pic: 'img/sucai/2.png'
+            },{
+                name: '化工原料',
+                pic: 'img/sucai/2.png'
             }],
             choose: 0,
             search: {
@@ -39,6 +58,7 @@ export default {
         }
     },
     created(){
+        window.scrollTo(0, 0)
         // this.fetchData()
     },
     methods: {
@@ -46,7 +66,7 @@ export default {
             this.choose = index
         },
         go_back() {
-            this.$emit('next',false)
+            this.$emit('goodspic',false)
         }
         // fetchData() {
         //     get_type().then(res=>{
@@ -73,30 +93,31 @@ export default {
 }
 .goods-type-list{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.goods-type-list-left,.goods-type-list-right{
-    width: 50%;
-    height: 100%;
-}
-.goods-type-list-left{
-    background-color: #F4F4F4;
-}
-.goods-type-list-right{
-    background-color: #fff;
-}
-.choose{
-    background-color: #fff;
-    color: #FF4D00;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .list-data{
-    line-height: 80px;
-    height: 80px;
+    width: 30%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-data img{
+    width: 100%;
+    height: 180px;
+}
+.list-data .title{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(0deg, #FF870F, #FF5401);
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
 }
 </style>

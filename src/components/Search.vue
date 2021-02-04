@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <div class='search-module' :style="'width:'+width+';height:'+height+';'+(center?'margin: 0 auto;':'')">
-            <img class='search-module-img' src="img/search.png" /><input class='search-module-input' :placeholder="placeholder"/>
-        </div>
+    <div class='search-module' :style="'width:'+width+';height:'+height+';'+(center?'margin: 0 auto;':'')">
+        <img class='search-module-img' src="img/search.png" /><input class='search-module-input' :placeholder="placeholder"/>
     </div>
 </template>
 
@@ -10,12 +8,12 @@
 export default {
     props: {
         width: {
-            type: Number,
-            default: 0
+            type: String,
+            default: ''
         },
         height: {
-            type: Number,
-            default: 0
+            type: String,
+            default: ''
         },
         placeholder: {
             type: String,
