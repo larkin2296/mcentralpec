@@ -58,7 +58,7 @@ export const constantRoutes = [{
             component: () =>
                 import ('@/views/login/login.vue'),
             name: 'Index',
-            meta: { title: '登录' }
+            meta: { title: '登录', right: '注册', path: '/register' }
         }]
     },
     {
