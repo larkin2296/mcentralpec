@@ -37,16 +37,16 @@ export default {
             this.roles_data = user_data
             this.form.role = user_data.name
             this.show = 0
-                // check_SMS(param).then(res => {
-                //     if (res.code == 0) {
-                //         let user_data = NewUser[this.roles[this.choose].value]
-                //         this.roles_data = user_data
-                //         this.form.role = user_data.name
-                //         this.show = 0
-                //     } else {
-                //         alert(res.msg)
-                //     }
-                // })
+            check_SMS(param).then(res => {
+                if (res.code == 0) {
+                    let user_data = NewUser[this.roles[this.choose].value]
+                    this.roles_data = user_data
+                    this.form.role = user_data.name
+                    this.show = 0
+                } else {
+                    alert(res.msg)
+                }
+            })
         },
         setNext(e) {
             if (e.last == false) {

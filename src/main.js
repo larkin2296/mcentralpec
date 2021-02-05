@@ -8,6 +8,7 @@ import './../public/font/font.css'
 import router from './router';
 import VDistpicker from 'v-distpicker'
 import axios from 'axios'
+import store from './store';
 
 Vue.prototype.$axios = axios;
 
@@ -16,7 +17,8 @@ Vue.component('v-distpicker', VDistpicker)
 Vue.config.productionTip = false
 
 new Vue({
-  el: '#app',
-  router,
-  render: h => h(App),
+    el: '#app',
+    router,
+    store,
+    render: h => h(App),
 })

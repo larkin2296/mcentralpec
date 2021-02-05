@@ -14,7 +14,7 @@
                         <span>获取验证码</span>
                     </div>
                 </div>
-                <div class='confirm-button dis-top' @click="login()">登录</div>
+                <div class='confirm-button dis-top' @click="smslogin()">登录</div>
                 <div class='login-bottom' @click="go_change(1)">账号密码登录</div>
             </div>
             <div  class='login-form' v-if="login_type == 1">
@@ -24,7 +24,7 @@
                 <div class='input-c'>
                     <input v-model="loginForm.pwd" placeholder="请输入密码" />
                 </div>
-                <div class='confirm-button dis-top'>登录</div>
+                <div class='confirm-button dis-top' @click="login()">登录</div>
                 <div class='login-bottom'>
                     <div class='tag-c' @click="go_change(0)">手机快捷登录</div>
                     <div class='tag-c' @click="go_change(2)">忘记密码</div>
