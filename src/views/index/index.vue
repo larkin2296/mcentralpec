@@ -25,10 +25,10 @@
         </div>
         <!-- 首页菜单 -->
         <div class='index-two'>
-            <div class="index-two-meau" v-for="(item,index) in meau" :key="index">
+            <router-link class="index-two-meau" v-for="(item,index) in meau" :key="index" :to="item.path">
                 <div class='index-two-meau-img'><img :src="'img/'+item.icon"/></div>
                 <div class='index-two-meau-title'>{{item.name}}</div>
-            </div>
+            </router-link>
         </div>
         <!-- 价格指数 -->
         <div class='index-three'>

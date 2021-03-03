@@ -189,6 +189,25 @@ export const constantRoutes = [{
             name: 'Add',
             meta: { title: '新增商品' }
         }]
+    },
+    {
+        path: '/shop',
+        component: Layout,
+        redirect: '/shop/index',
+        name: 'Shop',
+        children: [{
+            path: 'index',
+            component: () =>
+                import ('@/views/shop/index.vue'),
+            name: 'Index',
+            meta: { title: '产品选购' }
+        }, {
+            path: 'detail',
+            component: () =>
+                import ('@/views/detail/index.vue'),
+            name: 'Add',
+            meta: { title: '商品详情' }
+        }]
     }
 ]
 const createRouter = () => new Router({
